@@ -37,8 +37,7 @@ project/
 **1. Clone the Repository (if applicable):**
    If this project is hosted on Git, clone it first:
    ```bash
-   git clone <your-repository-url>
-   cd project/
+   git clone https://github.com/KonetiBalaji/IMDB-Movie-Review-Sentiment-Analysis.git
    ```
 
 **2. Create and Activate Virtual Environment:**
@@ -79,14 +78,14 @@ All commands below should be run from the root directory (`project/`) with the v
    Generates insights about the dataset and saves summary/plots to `results/dataset_info/`.
    *(Assuming you saved the EDA script as `run_eda.py`)*
    ```bash
-   python run_eda.py
+   python code/run_eda.py
    ```
 
 **2. Train Baseline Model (Naive Bayes):**
    Trains the Naive Bayes model, saves the model/vectorizer to `models/baselinemodel/`, and saves results to `results/baselinemodel/`.
    *(Assuming you saved the script as `train_baseline.py`)*
    ```bash
-   python train_baseline.py
+   python code/train_baseline.py
    ```
 
 **3. Fine-tune LLM (DistilBERT):**
@@ -94,7 +93,7 @@ All commands below should be run from the root directory (`project/`) with the v
    *(Assuming you saved the script as `train_llm.py`)*
    **Note:** This step is computationally intensive and will take a very long time without a GPU. The script uses data sampling by default to speed this up. You can configure the sample size within the script.
    ```bash
-   python train_llm.py
+   python code/train_llm.py
    ```
 
 **4. Run the Interactive Dashboard:**
